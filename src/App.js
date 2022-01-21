@@ -3,8 +3,9 @@ import React from 'react';
 const App = () => {
  
   return (
-   <div>
-     <h2>Hello Todo List</h2>
+   <div className='app'>
+     <h2 className='app-header'>Hello Todo List</h2>
+     <p>The most simple and amazing todo-list app</p>
    </div>
   );
 };
