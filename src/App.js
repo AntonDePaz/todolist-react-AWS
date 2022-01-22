@@ -1,4 +1,5 @@
 import React from 'react';
+//import TaskList from './TaskList';
 
 const App = () => {
 
@@ -7,23 +8,50 @@ const App = () => {
     'color' : 'red'
   };
 
-  function Tasklist(){
+  function Task(props){
+
+    return (
+      <>
+        <li className='task-item'>{props.taskName}</li>
+      </>
+    )
+  }
+
+  function TaskList(){
+    
+    const taskItems = [
+      'Follow Edukasyun ph on Facebook',
+      'Follow Edukasyun ph on Twiiteer',
+      'Follow Edukasyun ph on Tiktok',
+      'Follow Edukasyun ph on Tiktok2',
+    ];
+
       return (
+          <div>
+            <input type='text' className='task-input' />
         <ul>
-          <li className='task-item'>Follow Edukasyun ph on Facebook</li>
-          <li className='task-item'>Follow Edukasyun ph on Facebook</li>
-          <li className='task-item'>Follow Edukasyun ph on Facebook</li>
+         
+          { 
+            taskItems.map((task, idx) => {
+             return (
+                <Task key={idx} taskName={task}/>
+              )
+            })
+          }
         </ul>
+        </div>
       )
   }
- 
+
+
  
   return (
+   
    <div className='app'>
      <div className='app-header'>
         <h2 >My Amazing Todo List App</h2>
         <p style={paraStyle} >The most simple and amazing todo-list app</p>
-           <Tasklist />
+           <TaskList/>
      </div>
    </div>
   );
