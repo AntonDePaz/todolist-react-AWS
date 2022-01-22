@@ -1,5 +1,6 @@
 import React from 'react';
-//import TaskList from './TaskList';
+import TaskList from './components/TaskList';
+
 
 const App = () => {
 
@@ -8,40 +9,40 @@ const App = () => {
     'color' : 'red'
   };
 
-  function Task(props){
+  // function Task(props){
 
-    return (
-      <>
-        <li className='task-item'>{props.taskName}</li>
-      </>
-    )
-  }
+  //   return (
+  //     <>
+  //       <li className='task-item'>{props.taskName}</li>
+  //     </>
+  //   )
+  // }
 
-  function TaskList(){
+  // function TaskList(){
     
-    const taskItems = [
-      'Follow Edukasyun ph on Facebook',
-      'Follow Edukasyun ph on Twiiteer',
-      'Follow Edukasyun ph on Tiktok',
-      'Follow Edukasyun ph on Tiktok2',
-    ];
+  //   const taskItems = [
+  //     'Follow Edukasyun ph on Facebook',
+  //     'Follow Edukasyun ph on Twiiteer',
+  //     'Follow Edukasyun ph on Tiktok',
+  //     'Follow Edukasyun ph on Tiktok2',
+  //   ];
 
-      return (
-          <div>
-            <input type='text' className='task-input' />
-        <ul>
-         
-          { 
-            taskItems.map((task, idx) => {
-             return (
-                <Task key={idx} taskName={task}/>
-              )
-            })
-          }
-        </ul>
-        </div>
-      )
-  }
+  //     return (
+  //         <div>
+  //           <input type='text' className='task-input' />
+  //           <ul>
+            
+  //             { 
+  //               taskItems.map((task, idx) => {
+  //               return (
+  //                   <Task key={idx} taskName={task}/>
+  //                 )
+  //               })
+  //             }
+  //           </ul>
+  //       </div>
+  //     )
+  // }
 
 
  
