@@ -9,43 +9,6 @@ const App = () => {
     'color' : 'red'
   };
 
-  // function Task(props){
-
-  //   return (
-  //     <>
-  //       <li className='task-item'>{props.taskName}</li>
-  //     </>
-  //   )
-  // }
-
-  // function TaskList(){
-    
-  //   const taskItems = [
-  //     'Follow Edukasyun ph on Facebook',
-  //     'Follow Edukasyun ph on Twiiteer',
-  //     'Follow Edukasyun ph on Tiktok',
-  //     'Follow Edukasyun ph on Tiktok2',
-  //   ];
-
-  //     return (
-  //         <div>
-  //           <input type='text' className='task-input' />
-  //           <ul>
-            
-  //             { 
-  //               taskItems.map((task, idx) => {
-  //               return (
-  //                   <Task key={idx} taskName={task}/>
-  //                 )
-  //               })
-  //             }
-  //           </ul>
-  //       </div>
-  //     )
-  // }
-
-
- 
   return (
    
    <div className='app'>
