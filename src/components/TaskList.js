@@ -6,8 +6,6 @@ import Task from './Task';
 
 function TaskList() {
 
- // const [list,setList] = useState([]);
- // const [tasks, setTask] = useState();
 
   const taskItems = [
     'Follow Edukasyun ph on Facebook',
@@ -16,24 +14,33 @@ function TaskList() {
     'Follow Edukasyun ph on Tiktok2',
   ];
 
+   const [tasks, setTask] = useState('Jjust another');
 
   // useEffect(()=>{
   //     setTask()
   // });
 
 
-  // const inputTask = (e) => {
-  //   setTask(e.target.value)
-  // }
+  const inputTask = (e) => {
+    setTask(e.target.value)
+  }
 
   // const add = () => {
   //   setList(...list, tasks );
   // }
 
- // console.log(tasks);
+  console.log(tasks);
+
+
     return (
         <div>
-          <input type='text' className='task-input'  />
+          <input 
+          type='text' 
+          className='task-input' 
+          placeholder='Create a new task' 
+          onChange={inputTask}  
+          //value={tasks}
+          />
         
           <ul>
           
